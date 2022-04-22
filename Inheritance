@@ -1,0 +1,45 @@
+//Write a java program for employee
+abstract class Employee  //ABSTRACT CLASS
+{
+abstract void details();
+}
+class Account extends Employee  //INHERITENCE
+{
+double id;
+long jd;
+long mn;
+float bal;
+String name,eid,bname;
+private int accno;
+private int pin;
+void details()
+{
+accno=13;
+name="Laxmi";
+bal=70.28f;
+pin=2526;
+bname="HDFC";
+id=02813d;
+mn=9987675456l;
+eid="laxmi@gmail.com";
+System.out.println("----------------");
+System.out.println("Employee details");
+System.out.println("----------------");
+System.out.println("Account Number="+accno);
+System.out.println("Account Holder Name="+name);
+System.out.println("Account Balance="+bal);
+System.out.println("Password="+pin);
+System.out.println("Branch Name="+bname);
+System.out.println("Identity Number="+id);
+System.out.println("Mobile Number="+mn);
+System.out.println("Email id="+eid);
+}
+}
+class EmployeeDemo
+{
+public static void main(String[] args)
+{
+Employee ee=new Account();
+ee.details();
+}
+}
